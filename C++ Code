@@ -1,0 +1,620 @@
+#include <iostream>
+#include <time.h>
+#include <conio.h>
+#include <cstdlib>
+#include <cstring>
+#include <windows.h>
+#include <iomanip>
+using namespace std;
+// GLOBAL VARIABLE
+char c,m,t,a,b;
+int i=0,tot=0,y=0;
+int a1=0,a2=0,a3=0,a4=0;
+int b1=0,b2=0,b3=0,b4=0,b5=0,b6=0,b7=0,b8=0;
+int c1=0,c2=0,c3=0,c4=0,c5=0;
+int d1=0,d2=0,d3=0,d4=0,d5=0;
+int total=0;
+// Functions
+void menu();
+void appetizers();
+void dosas();
+void southindianfavs();
+void beverages();
+void showbill();
+void payment();
+void func();
+// Main Function
+int main()
+{ func();
+}
+// Main Page
+void func()
+{
+char loader=254;
+cout<<"\t\t\t\tLoading....."<<endl;
+for(int i=0;i<70;i++ )
+{
+system("color 3");
+cout<<loader;
+Sleep(20);
+}
+system("cls");
+cout<<"\n\n\t\t==============================================
+========\n";
+cout<<"\t\t\t WELCOME TO RED RAVEN CAFE \n";
+cout<<"\t\t==================================================
+====\n\n\n";
+cout<<"\t\t\t1. MENU \n\t\t\t2. SHOW BILL\n\t\t\t3. 
+PAYMENT\n\t\t\t4. EXIT\n";
+cout<<"\n\n\n\t\tSELECT ONE OF THE OPTION FROM ABOVE";
+t=getche();
+if(t=='2')
+{
+system("cls");
+showbill();
+}
+if(t=='1')
+{
+system("cls");
+menu();
+}
+if(t=='3')
+{
+system("cls");
+payment();
+}
+if(t=='4')
+{
+system("cls");
+exit(0);
+}
+if(t=='b')
+{
+system ("cls");
+func();
+}
+char a;
+}
+// Menu Function
+void menu()
+{
+cout<<" \n\t\t~!~!~!~!~!~!~!~!~! MAIN MENU 
+~!~!~!~!~!~!~!~!~!\n\n";
+cout<<"\t\t\t1.FROM THE STEAM \n\t\t\t2.DOSAS\n";
+cout<<"\t\t\t3.SOUTH INDIAN FAVOURITES\n\t\t\t4.BEVERAGES\n\t\t";
+cout<<"\n\n\t\t\tSELECT AN OPTION FROM ABOVE\n\n\t\t\tPRESS B TO 
+GO BACK";
+do
+{
+c=getche();
+if(c=='1')
+{
+system("cls");
+appetizers();
+}
+if(c=='2')
+{
+system("cls");
+dosas();
+}
+if(c=='3')
+{
+system("cls");
+southindianfavs();
+}
+if(c=='4')
+{
+system("cls");
+beverages();
+}
+else
+{
+cout<<"\n invalid input \n";
+}
+}
+while(c!='b');
+if(c=='b')
+{
+system("cls");
+func();
+}
+}
+int n;
+// idli Function
+void appetizers()
+{ cout<<"\t\t\t\t\tFRESH FROM THE STEAM : IDLIS\t\t\t\t\n"<<endl;
+cout<<"\t\t\t\t1. IDLI SAMBAR"<<"\t\t\t=Rs.40\n";
+cout<<"\t\t\t\t2. IDLI SAMBAR WITH VADA"<<"\t=Rs.50\n";
+cout<<"\t\t\t\t3. RAVA IDLI"<<"\t\t\t=Rs.60\n";
+cout<<"\t\t\t\t4. PODI IDLI"<<"\t\t\t=Rs.60\n";
+cout<<"\n SELECT AN ITEM\n TO SELECT THE SAME ITEM ONCE 
+AGAIN,PRESS THE CORRESPONDING NUMBER ONCE AGAIN\n";
+cout<<"\n PRESS B TO GO BACK TO MAIN MENU\n";
+do
+{
+b=getche();
+switch (b)
+{
+case '1':
+cout<<" selected\n" ;
+a1++;
+break;
+case '2':
+cout<<" selected\n";
+a2++;
+break;
+case '3':
+cout<<" selected\n" ;
+a3++;
+break;
+case '4':
+cout<<" selected\n";
+a4++;
+break;
+default:
+cout<<" Invalid Input\n";
+break;
+}
+}
+while(b!='b');
+if(b=='b')
+{
+system("cls"),
+menu();
+}
+}
+// dosa function
+void dosas()
+{ cout<<"\t\t\t\t\tDOSAS\t\t\t\t\n"<<endl;
+cout<<"\t\t\t1. PLAIN DOSA = Rs.40\n";
+cout<<"\t\t\t2. ONION DOSA = Rs.50\n";
+cout<<"\t\t\t3. PODI DOSA = Rs.50\n";
+cout<<"\t\t\t4. MASALA DOSA = Rs.60\n";
+cout<<"\t\t\t5. MYSORE MASALA DOSA = Rs.60\n";
+cout<<"\t\t\t6. RAVA DOSA = Rs.60\n";
+cout<<"\t\t\t7. ONION UTHAPA = Rs.80\n";
+cout<<"\t\t\t8. PLAIN UTHAPA = Rs.80\n";
+ cout<<"\n SELECT AN ITEM\n TO SELECT THE SAME ITEM ONCE 
+AGAIN,PRESS THE CORRESPONDING NUMBER ONCE AGAIN\n";
+cout<<"\n PRESS B TO GO BACK TO MAIN MENU\n";
+do
+{
+a=getche();
+switch (a)
+{
+case '1':
+cout<<" selected\n";
+b1++;
+break;
+case '2':
+cout<<" selected\n";
+b2++;
+break;
+case '3':
+cout<<" selected\n";
+b3++;
+break;
+case '4':
+cout<<" selected\n";
+b4++;
+break;
+case '5':
+cout<<" selected\n";
+b5++;
+break;
+case '6':
+cout<<" selected\n";
+b6++;
+break;
+case '7':
+cout<<" selected\n";
+b7++;
+break;
+case '8':
+cout<<" selected\n";
+b8++;
+break;
+default:
+cout<<"Invalid Input\n";}
+}
+while(a!='b');
+if(a=='b')
+{
+system ("cls");
+menu();
+}
+}
+// south indian special
+void southindianfavs()
+{ cout<<"\t\t\t\t\tSOUTH INDIAN SPECIALS\t\t\t\t\n"<<endl;
+ cout<<"\t\t1. GHEE PONGAL = Rs.50\n";
+cout<<"\t\t2. VEGETABLE UPMA = Rs.40\n";
+cout<<"\t\t3. AVALAKKI = Rs.40\n";
+cout<<"\t\t4. POORI MASALA = Rs.50\n";
+cout<<"\t\t5. CHOW CHOW BATH = Rs.50\n";
+cout<<"\n SELECT AN ITEM\n TO SELECT THE SAME ITEM ONCE 
+AGAIN,PRESS THE CORRESPONDING NUMBER ONCE AGAIN\n";
+cout<<"\n PRESS B TO GO BACK TO MAIN MENU\n";
+do
+{
+a=getche();
+switch (a)
+{
+case '1':
+cout<<" selected\n";
+c1++;
+break;
+case '2':
+cout<<" selected\n";
+c2++;
+break;
+case '3':
+cout<<" selected\n";
+c3++;
+break;
+case '4':
+cout<<" selected\n";
+c4++;
+break;
+case '5':
+cout<<" selected\n";
+c5++;
+break;
+default:
+cout<<"Invalid Input\n";}
+}
+while(a!='b');
+if(a=='b')
+{
+system ("cls");
+menu();
+}
+}
+// beverages
+void beverages()
+{ cout<<"\t\t\t\t\tBEVERAGES\t\t\t\t\n"<<endl;
+cout<<"\t\t1. FILTER COFFEE = Rs.20\n";
+cout<<"\t\t2. MASALA TEA = Rs.20\n";
+cout<<"\t\t3. BADAM MILK = Rs.20\n";
+cout<<"\t\t4. KASHAYA = Rs.20\n";
+cout<<"\t\t5. BOTTLED WATER = Rs.20\n";
+cout<<"\n SELECT AN ITEM\n TO SELECT THE SAME ITEM ONCE AGAIN,PRESS 
+THE CORRESPONDING NUMBER ONCE AGAIN\n";
+cout<<"\n PRESS B TO GO BACK TO MAIN MENU\n";
+do
+{
+a=getche();
+switch (a)
+{
+case '1':
+cout<<" selected\n";
+d1++;
+break;
+case '2':
+cout<<" selected\n";
+d2++;
+break;
+case '3':
+cout<<" selected\n";
+d3++;
+break;
+case '4':
+cout<<" selected\n";
+d4++;
+break;
+case '5':
+cout<<" selected\n";
+d5++;
+break;
+default:
+cout<<" Invalid Input\n";}
+}
+while(a!='b');
+if(a=='b')
+{
+system ("cls");
+menu();
+}
+}
+// show bill Function
+void showbill()
+{
+char z,b;
+time_t rawtime;struct tm * timeinfo;time ( &rawtime );timeinfo = 
+localtime ( &rawtime );
+cout<< (asctime (timeinfo));
+ cout<<"\n\tDISHES\t\t\t\t\tPRICE (RS.)\n\n"<<endl;
+// IDLI ORDER
+if(a1>0)
+{ cout<<"IDLI SAMBAR\t\t\t\t\t=Rs."<<40*a1<<"\t\t"<<"QUANTITY = 
+"<<a1<<"\n";
+total+=(40*a1);
+y++; }
+if(a2>0)
+{ cout<<"IDLI SAMBAR WITH 
+VADA\t\t\t\t=Rs."<<50*a2<<"\t\t"<<"QUANTITY = "<<a2<<"\n";
+total+=(50*a2);
+y++; }
+if(a3>0)
+{ cout<<"RAVA IDLI\t\t\t\t\t=Rs."<<60*a3<<"\t\t"<<"QUANTITY = 
+"<<a3<<"\n";
+total+=(60*a3);
+y++; }
+if(a4>0)
+{ cout<<"PODI IDLI\t\t\t\t\t=Rs."<<80*a4<<"\t\t"<<"QUANTITY = 
+"<<a4<<"\n";
+total+=(80*a4);
+y++;
+}
+// DOSA ORDER
+if(b1>0)
+{ cout<<"PLAIN DOSA\t\t\t\t\t=Rs."<<40*b1<<"\t\t"<<"QUANTITY = 
+"<<b1<<"\n";
+total+=(40*b1);
+y++;}
+if(b2>0)
+{ cout<<"ONION DOSA\t\t\t\t\t=Rs."<<50*b2<<"\t\t"<<"QUANTITY = 
+"<<b2<<"\n";
+total+=(50*b2);
+y++;}
+ if(b3>0)
+{cout<<"PODI DOSA\t\t\t\t\t=Rs."<<50*b3<<"\t\t"<<"QUANTITY = 
+"<<b3<<"\n";
+total+=(50*b3);
+y++;
+}
+if(b4>0)
+{ cout<<"MASALA 
+DOSA\t\t\t\t\t=Rs."<<60*b4<<"\t\t"<<"QUANTITY = "<<b4<<"\n";
+total+=(60*b4);
+y++;}
+ if(b5>0)
+ { cout<<"MYSORE MASALA 
+DOSA\t\t\t\t=Rs."<<60*b5<<"\t\t"<<"QUANTITY = "<<b5<<"\n";
+total+=(60*b5);
+y++;}
+ if(b6>0)
+{cout<<"RAVA DOSA\t\t\t\t\t=Rs."<<60*b6<<"\t\t"<<"QUANTITY 
+= "<<b6<<"\n";
+total+=(60*b6);
+y++;
+}
+if(b7>0)
+{
+cout<<"ONION 
+UTHAPA\t\t\t\t\t=Rs."<<80*b7<<"\t\t"<<"QUANTITY = "<<b7<<"\n";
+total+=(80*b7);
+y++;}
+ if(b8>0)
+{cout<<"PLAIN 
+UTHAPA\t\t\t\t\t=Rs."<<80*b8<<"\t\t"<<"QUANTITY = "<<b8<<"\n";
+total+=(40*b8);
+y++;
+}
+// south special
+if(c1>0)
+{ cout<<"GHEE PONGAL\t\t\t\t\t=Rs."<<40*c1<<"\t\t"<<"QUANTITY = 
+"<<c1<<"\n";
+total+=(40*c1);
+y++;}
+ if(c2>0)
+ { cout<<"VEGETABLE UPMA\t\t\t\t\t=Rs."<<40*c2<<"\t\t"<<"QUANTITY = 
+"<<c2<<"\n";
+total+=(40*c2);
+y++;}
+ if(c3>0)
+{cout<<"AVALAKKI\t\t\t\t\t=Rs."<<40*c3<<"\t\t"<<"QUANTITY = 
+"<<c3<<"\n";
+total+=(40*c3);
+y++;
+}
+if(c4>0)
+{ cout<<"POORI 
+MASALA\t\t\t\t\t=Rs."<<50*c4<<"\t\t"<<"QUANTITY = "<<c4<<"\n";
+total+=(50*c4);
+y++;}
+ if(c5>0)
+ { cout<<"CHOW CHOW BATH\t\t\t\t\t=Rs."<<50*c5<<"\t\t"<<"QUANTITY 
+= "<<c5<<"\n";
+total+=(50*c5);
+y++;
+}
+// beverages
+if(d1>0)
+{ cout<<"FILTER COFFEE\t\t\t\t\t=Rs."<<20*d1<<"\t\t"<<"QUANTITY = 
+"<<d1<<"\n";
+total+=(20*d1);
+y++;}
+ if(d2>0)
+{ cout<<"MASALA TEA\t\t\t\t\t=Rs."<<20*d2<<"\t\t"<<"QUANTITY = 
+"<<d2<<"\n";
+total+=(20*d2);
+y++;}
+ if(d3>0)
+{ cout<<"BADAM MILK\t\t\t\t\t=Rs."<<20*d3<<"\t\t"<<"QUANTITY = 
+"<<d3<<"\n";
+total+=(20*d3);
+y++;}
+ if(d4>0)
+{ cout<<"KASHAYA\t\t\t\t\t\t=Rs."<<20*d4<<"\t\t"<<"QUANTITY = 
+"<<d4<<"\n";
+total+=(20*d4);
+y++;}
+ if(d5>0)
+ { cout<<"BOTTLED WATER\t\t\t\t\t=Rs."<<20*d5<<"\t\t"<<"QUANTITY = 
+"<<d5<<"\n";
+total+=(20*d5);
+y++;
+}
+// total bill
+cout<<"\t\t\tTOTAL BILL =Rs."<<total<<endl<<"\t\t\tTOTAL DISHES 
+= "<<y<<endl;
+tot+=total;
+cout<<"\nPRESS B TO GO BACK\n"<<endl;
+z=getche();
+if(z=='b')
+{
+a1=0,a2=0,a3=0,a4=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0,b7=0,b8=0,c1=0,
+c2=0,c3=0,c4=0,c5=0,d1=0,d2=0,d3=0,d4=0,d5=0;
+b++;
+system("cls");
+func();
+}
+}
+// Payment Function
+void payment()
+{
+char b;
+time_t rawtime;struct tm * timeinfo;time ( &rawtime );timeinfo = 
+localtime ( &rawtime );
+cout<< (asctime (timeinfo));
+ char tran[10],upiid[10];
+ int quantity, total,pm,pop,cvv,expm,expy;
+ pay:
+ cout<<"\n\n Payment :";
+ cout<<"\n\n Press 1 to initiate Online payment"<<endl;
+ cin>>pm;
+ if (pm==1)
+ { online:
+ system("cls");
+ cout<<"\t\t\t\t------------------\n";
+ cout<<"\t\t\t\t| Online Payment |";
+ cout<<"\n\t\t\t\t------------------";
+ cout<<"\n\n 1. UPI";
+ cout<<"\n 2. Credit/ Debit Card";
+ cout<<"\n\n Please choose payment option :";
+ cin>>pop;
+ if (pop==1)
+ {
+ system("cls");
+ cout<<"\t\t\t\t------------------\n";
+ cout<<"\t\t\t\t| Online Payment |";
+ cout<<"\n\t\t\t\t------------------";
+ cout<<"\n\n ! UPI payment !";
+ cout<<"\n\n Your UPI ID :";
+ cin>>upiid;
+ cout<<"\n $ Go to your online payment app and make payment\n and 
+copy the transaction id paste bellow :)\n";
+ cout<<"\n Transaction ID :";
+ cin>>tran;
+ system("cls");
+ cout<<"\n\t\t\t\t -----------------------------";
+ cout<<"\n\t\t\t\t | RED RAVEN CAFE |";
+ cout<<"\n\t\t\t\t -----------------------------";
+ cout<<"\n -----------------------------------------------------";
+ cout<<"\n Your total Bill is :Rs."<<tot<<" (Paid via UPI)";
+ cout<<"\n -----------------------------------------------------";
+ cout<<"\n Your order will be delivered in 25-30 minutes";
+ cout<<"\n -----------------------------------------------------";
+ cout<<"\n Thank you for ordering from RED RAVEN CAFE :)";
+ cout<<"\n -----------------------------------------------------\n\n";
+ exit (0);
+ }
+ else if (pop==2)
+ {
+ system("cls");
+ cout<<"\t\t\t\t------------------\n";
+ cout<<"\t\t\t\t| Online Payment |";
+ cout<<"\n\t\t\t\t------------------";
+ cout<<"\n\n ! Credit/ Debit Card !";
+ cout<<"\n\n Enter card details :";
+ card:long long int cnu;
+ cout<<"\n\n Card number (16 digit) :";
+ cin>>cnu;
+ int cocnu=0;
+ while(cnu!=0)
+ {
+ cnu=cnu/10;
+ cocnu++;
+ }
+ if(cocnu!=16)
+ {
+ cout<<"\n Invalid Card number.";
+ goto card;
+ }
+ cvvvv:
+ cout<<"\n\n CVV (3 digit) :";
+ cin>>cvv;
+ int cocvv=0;
+ while(cvv!=0)
+ {
+ cvv=cvv/10;
+ cocvv++;
+ }
+ if(cocvv!=3)
+ {
+ cout<<"\n Invalid CVV number.";
+ goto cvvvv;
+ }
+ cout<<"\n\n Exp. date :";
+ expdate:
+ cout<<"\n Month(MM) :";
+ cin>>expm;
+ int mm=expm;
+ int coexpm=0;
+ while(expm!=0)
+ {
+ expm=expm/10;
+ coexpm++;
+ }
+ if(coexpm>2 || mm == 0)
+ {
+ cout<<"\n Invalid Exp date.";
+ goto expdate;
+ }
+ else if (mm > 12)
+ {
+ cout<<"\n Invalid Exp date.";
+ goto expdate;
+ }
+ cout<<"\n Year(YYYY) :";
+ cin>>expy;
+ int yy=expy;
+ int coexpy=0;
+ while(expy!=0)
+ {
+ expy=expy/10;
+ coexpy++;
+ }
+ if(coexpy!=4)
+ {
+ cout<<"\n Invalid Exp date.";
+ goto expdate;
+ }
+ else if (yy < 2022)
+ {
+ cout<<"\n Invalid Exp date.";
+ goto expdate;
+ }
+ cout<<"\n\n Processing";
+ for (int i = 0; i < 4; i++)
+ {
+ cout<<".";
+ Sleep(1000);
+ }
+ system("cls");
+ cout<<"\n\t\t\t\t -----------------------------";
+ cout<<"\n\t\t\t\t | RED RAVEN CAFE |";
+ cout<<"\n\t\t\t\t -----------------------------";
+ cout<<"\n -----------------------------------------------------";
+ cout<<"\n Your total Bill is :Rs."<<tot<<" (Paid via ATM Card)";
+ cout<<"\n -----------------------------------------------------";
+ cout<<"\n Your order will be delivered in 25-30 minutes";
+ cout<<"\n -----------------------------------------------------";
+ cout<<"\n Thank you for ordering from RED RAVEN CAFE :)";
+ cout<<"\n -----------------------------------------------------\n\n";
+ exit(0);
+ }
+ {system("cls");
+ cout<<"\n Please choose valid payment method "<<endl;
+ goto pay;
+}
+ char e;
+e=getche();
+if(e=='b')
+{
+system("cls");
+func();
+}
+} }
+// the end
